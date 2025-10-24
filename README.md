@@ -12,20 +12,25 @@
             font-family: Arial, sans-serif;
         }
         .image-background {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+        position: fixed;
+        inset: 0;  
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;          
+    }
         .image-background img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(70%);
-        }
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;      
+        object-position: center;
+        filter: brightness(70%);
+    }
         .center-text-overlay {
             position: absolute;
             top: 50%;
@@ -36,7 +41,9 @@
             padding: 20px;
             background-color: rgba(255, 28, 28, 1);
             border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
+        .center-text-overlay { position: relative; z-index: 1; }
         .highlights-event {
           position: absolute;
           left: 24px;
@@ -51,14 +58,15 @@
           box-shadow: 0 8px 20px rgba(0,0,0,0.5);
           cursor: pointer;
           padding: 0;
-          height: 48px;
+          height: 48px; 
+          z-index: 2;
         }
         .highlights-event h2 {
           margin: 0;
           font-size: 16px;
           font-weight: 700;
           padding: 12px 14px;
-          color: #ffd;
+          color: #ffd; 
           background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
         }
         .highlights-event nav {
@@ -78,20 +86,20 @@
         .highlight-item:last-child { border-bottom: none; }
         .highlights-event:hover,
         .highlights-event:focus-within {
-          height: auto;
-          width: 320px;
-          max-width: calc(100% - 48px);
-          transform: translateY(-6px);
+        height: auto;
+        width: 320px;
+        max-width: calc(100% - 48px);
+        transform: translateY(-6px);
         }
         .highlights-event:hover nav,
         .highlights-event:focus-within nav {
-          max-height: 400px;
-          opacity: 1;
+        max-height: 400px;
+        opacity: 1;
         }
         .highlights-event:hover .highlight-item,
         .highlights-event:focus-within .highlight-item {
-          transform: translateY(0);
-          opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
         }
         @media (max-width: 520px) {
           .highlights-event { left: auto; right: 12px; bottom: 12px; width: 220px; }
@@ -120,4 +128,5 @@
 </div>
 </body>
 </html>
+    
     
