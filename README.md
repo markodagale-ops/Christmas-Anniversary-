@@ -51,14 +51,14 @@
           box-shadow: 0 8px 20px rgba(0,0,0,0.5);
           cursor: pointer;
           padding: 0;
-          height: 48px; 
+          height: 48px;
         }
         .highlights-event h2 {
           margin: 0;
           font-size: 16px;
           font-weight: 700;
           padding: 12px 14px;
-          color: #ffd; 
+          color: #ffd;
           background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
         }
         .highlights-event nav {
@@ -100,30 +100,24 @@
     </style>
     </head>
     <body>
-        <div class="image-background">
-        <img src="https://i.ibb.co/WNV8GXgh/Screenshot-2025-10-24-215629.png" alt="background" border="0">
-        </div>
-        <div class="center-text-overlay">
-            <h1>Join Us for a Festive Christmas Party!</h1>
-            <p>Date: December 20, 2025 | Time: 7:00 PM | Venue: Downtown Community Hall</p>
-            <p>Enjoy an evening of joy, laughter, and holiday cheer with friends and family. There will be food, drinks, music, and fun activities for all ages!</p>
-            <p>RSVP by December 10th to ensure your spot at the celebration.</p>
-            <p>We look forward to celebrating the holiday season with you!</p>
-        <section class="highlights-event">
-        <h2>
-            Upcoming events
-        </h2>
-    <section class="highlights-event" tabindex="0" aria-label="Upcoming events">
-        <h2>Upcoming events</h2>
+      <div class="image-background">
+  <img src="https://i.ibb.co/WNV8GXgh/Screenshot-2025-10-24-215629.png" alt="background">
+  <div class="center-text-overlay">
+    <h1>Join Us for a Festive Christmas Party!</h1>
+    <p>Date: December 20, 2025 | Time: 7:00 PM | Venue: Downtown Community Hall</p>
+    <p>Enjoy an evening of joy, laughter, and holiday cheer with friends and family. There will be food, drinks, music, and fun activities for all ages!</p>
+    <p>RSVP by December 10th to ensure your spot at the celebration.</p>
+  </div>
+  <section class="highlights-event" tabindex="0" aria-label="Upcoming events">
+    <h2>Upcoming events</h2>
     <nav aria-hidden="false">
       <div class="highlight-item">Funtime games</div>
       <div class="highlight-item">Delicious food</div>
       <div class="highlight-item">Great music</div>
       <div class="highlight-item">Dance competition</div>
-        </nav>
-        </section>
-        </div>
-    </body>
+    </nav>
+  </section>
+</div>
+</body>
 </html>
-    
     
